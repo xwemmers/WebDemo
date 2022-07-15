@@ -1,0 +1,21 @@
+﻿@model string[]
+
+@{
+    ViewData["Title"] = "Participants";
+}
+
+<h1>Participants</h1>
+
+<p>
+    There are @Model.Length names in the list.
+</p>
+
+@foreach(string name in Model)
+{
+    <p>
+        Hello @name
+    </p>
+}
+
+<h3>C# plus HTML equals Razor.</h3>
+
